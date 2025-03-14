@@ -207,16 +207,16 @@ void Window::UpdateFileLabel(const std::wstring& filename) {
     SetWindowTextW(hFileLabel, text.c_str());
 }
 
-void SetWindowTextColor(HWND hwnd, COLORREF color) {
+void Window::SetWindowTextColor(HWND hwnd, COLORREF color) {
     SetWindowLongPtr(hwnd, GWLP_USERDATA, color);
     InvalidateRect(hwnd, nullptr, TRUE);
 }
 
-void SetWindowBackgroundColor(HWND hwnd, COLORREF color) {
+void Window::SetWindowBackgroundColor(HWND hwnd, COLORREF color) {
     SetWindowLongPtr(hwnd, GWLP_USERDATA, color);
     InvalidateRect(hwnd, nullptr, TRUE);
 }
 
-void SetWindowCursor(HWND hwnd, LPCWSTR cursor) {
+void Window::SetWindowCursor(HWND hwnd, LPCWSTR cursor) {
     SetClassLongPtr(hwnd, GCLP_HCURSOR, (LONG_PTR)LoadCursorW(nullptr, cursor));
 }

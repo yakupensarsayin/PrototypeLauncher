@@ -24,8 +24,8 @@ private:
     void CreateControls();
     void UpdateFileLabel(const std::wstring& filename);
     void OpenFileDialog();
-};
 
-void SetWindowTextColor(HWND hwnd, COLORREF color);
-void SetWindowBackgroundColor(HWND hwnd, COLORREF color);
-void SetWindowCursor(HWND hwnd, LPCWSTR cursor);
+    void SetWindowTextColor(HWND hwnd, COLORREF color);
+    void SetWindowBackgroundColor(HWND hwnd, COLORREF color);
+    void SetWindowCursor(HWND hwnd, LPCWSTR cursor);
+};
