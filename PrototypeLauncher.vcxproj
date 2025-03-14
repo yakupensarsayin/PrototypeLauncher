@@ -127,20 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="PrototypeLauncher.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="ProcessHandler.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="PrototypeLauncher.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ProcessHandler.cpp" />
+    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="PrototypeLauncher.rc" />
+    <ResourceCompile Include="resources.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="PrototypeLauncher.ico" />
-    <Image Include="small.ico" />
+    <Image Include="..\..\source\repos\PrototypeLauncher\app.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
